@@ -52,7 +52,7 @@ class App extends Component {
         Email: ${this.state.email}
         city: ${this.state.city}
       Phone Number: ${this.state.phoneNumber}
-      education: ${this.state.skills}
+      education: ${this.state.education}
       `);
     } else {
       console.error("FORM INVALID - DISPLAY ERROR MESSAGE");
@@ -87,7 +87,7 @@ class App extends Component {
           value.length < 10 ? " 10 characaters required" : "";
         break;
  case "education":
-        formErrors.skills =
+        formErrors.education =
           value.length < 10 ? " required" : "";
         break;
       default:
